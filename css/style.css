@@ -145,6 +145,29 @@ h2{
     margin-bottom: 20px;
 }
 
+/* bandeau new products */
+
+.bandeau{
+    width: 940px;
+    margin:0 auto;
+}
+
+.shop {
+    text-align: left;
+    height: 63px;
+    line-height:63px;
+    background:url('../img/bar-promo.jpg');
+    font-size: 19px;
+}
+.shop a {
+    float:right;
+}
+
+.shop-all{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+}
 /* section story rules */
 
 .story{
