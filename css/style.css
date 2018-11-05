@@ -62,14 +62,14 @@ header:after{
 
 /* nav */
 
-nav{
+.main-nav{
     text-align: center;
     border-bottom: 2px solid #303030;
     padding: 25px 0;
     margin-bottom: 40px;
 }
 
-nav a{
+.main-nav a{
     position: relative;
     margin:0px 20px;
     display: inline-block;
@@ -85,11 +85,11 @@ nav a{
     vertical-align: middle;
 }
 
-nav a:hover{
+.main-nav a:hover{
     border-bottom: 2px dotted #303030;
 }
 
-nav a:nth-of-type(4) {
+.main-nav a:nth-of-type(4) {
     border-bottom: none;
 }
 
@@ -97,7 +97,8 @@ nav a:nth-of-type(4) {
 
 main{
     text-align:center;
-    width:"920px";
+    width:940px;
+    margin: 0 auto;
 }
 
 .titre{
@@ -129,7 +130,7 @@ main{
 
 .trio div a img{
     width:300px;
-    margin: 40px 10px 0px;
+    margin: 40px 5px 0px;
 }
 
 h2{
@@ -163,7 +164,7 @@ h2{
     float:right;
 }
 
-.shop-all{
+.shop-all,.learn{
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     font-size: 16px;
@@ -187,17 +188,119 @@ h2{
     position: relative;
     background: url(../img/image-04.jpg)no-repeat;
     height: 565px;
-    margin-top: -20px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .formulaire{
     position: absolute;
     background: #fff;
-    width:"330px";
-    height:"180px";
+    width:330px;
+    height:180px;
     transform:translate(-50%,-50%);
     top:50%;
     left:50%;
     text-align: center;
+}
+
+.formulaire::before{
+    content:"";
+    width: 315px;
+    height: 165px;
+    border:2px solid #303030;
+    position: absolute;
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    /* top: 5px;
+    left:5px;
+    right:5px;
+    bottom:5px; */
+    z-index: -1;
+}
+
+/* bandeau bas */
+
+footer{
+    width:940px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-contact {
+    height: 152px;
+    background:url('../img/bar-footer.jpg');
+}
+
+.footer-contact > div{
+    float: left;
+    width:calc(100%/3);
+}
+
+.footer-contact h3{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 30px;
+}
+
+.footer-contact::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.connect a{
+    background-image:url('../img/icons-social.jpg');
+    height: 22px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.facebook{
+    width: 12px;
+}
+
+.instagram{
+    width: 21px;
+    background-position: -12px;
+}
+
+/* footer infos */
+
+.footer-nav{
+    text-align: center;
+    padding: 25px 0;
+    margin-bottom: 40px;
+}
+
+.footer-nav a{
+    position: relative;
+    margin:0px 5px;
+    display: inline-block;
+    font-size: 12px;
+    font-family: serif;
+    text-transform: uppercase;
+    vertical-align: middle;
+    border-bottom: 2px dotted transparent;
+}
+
+.logo-holly{
+    vertical-align: middle;
+    padding: 10px 20px;
+}
+
+small{
+    display: inline;
+    text-transform: uppercase;
+}
+
+.footer-nav a+a::before{
+    content: "•";
+}
+
+.footer-nav a+a::after{
+    content:'';
+    display: block;
+    clear:both;
 }
